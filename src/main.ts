@@ -13,6 +13,10 @@ import 'zone.js';
     </a>
     <div>Test1234</div>
     <input [(ngModel)]="name" />
+    <ul>
+      <li *ngFor="let item of list">{{ item }}</li>
+    </ul>
+
   `,
   imports: [
     ReactiveFormsModule
@@ -20,6 +24,7 @@ import 'zone.js';
 })
 export class App {
   name = 'Angular';
+  list = ['a', 'b', 'c'];
 }
 
 bootstrapApplication(App);
