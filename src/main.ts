@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { bootstrapApplication } from '@angular/platform-browser';
 import 'zone.js';
 
@@ -11,7 +12,11 @@ import 'zone.js';
       Learn more about Angular
     </a>
     <div>Test1234</div>
+    <input [(ngModel)]="name" />
   `,
+  imports: [
+    ReactiveFormsModule
+  ]
 })
 export class App {
   name = 'Angular';
