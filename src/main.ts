@@ -10,7 +10,7 @@ import 'zone.js';
     <a target="_blank" href="https://angular.dev/overview">
       Learn more about Angular
     </a>
-    <div>Test123</div>
+    <div>Test1234</div>
   `,
 })
 export class App {
