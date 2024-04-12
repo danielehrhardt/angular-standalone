@@ -1,3 +1,4 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { bootstrapApplication } from '@angular/platform-browser';
@@ -19,7 +20,8 @@ import 'zone.js';
 
   `,
   imports: [
-    FormsModule
+    FormsModule,
+    NgFor
   ]
 })
 export class App {
